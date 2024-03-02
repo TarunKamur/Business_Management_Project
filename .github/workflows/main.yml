@@ -1,4 +1,4 @@
-name: Dockerize the social-media-app
+name: Build & Test & Dockerize the Hotel Managment App
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-node@v2
         with:
-          java-version: '11'
+          java-version: '17'
       
       - name: Build & Test
         run: mvn clean package   
